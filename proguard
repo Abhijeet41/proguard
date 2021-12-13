@@ -132,6 +132,14 @@ proguard rules android java
 -keepclasseswithmembernames class com.karumi.dexter.** { *; }
 -keepclasseswithmembernames interface com.karumi.dexter.** { *; }
 
+#Volley
+-keep class com.android.volley.** { *; }
+-keep class org.apache.commons.logging.**
+
+-keepattributes *Annotation*
+
+-dontwarn org.apache.**
+
 
 
 
